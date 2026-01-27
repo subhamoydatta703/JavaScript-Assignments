@@ -6,9 +6,14 @@
 let counter = 0;
 
 
+
 const updateCounter = () => {
   counter++;
   console.log(counter);
+  if(counter==10){
+    clearInterval(intID);
+  }
 };
 
-setInterval(updateCounter, 1000);
+const intID = setInterval(updateCounter, 1000);
+
