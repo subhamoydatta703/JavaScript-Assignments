@@ -12,3 +12,20 @@ function wait(n) {
   }
   
   module.exports = wait;
+
+  function waiting(n) {
+    const promise1 = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, n*1000);
+    });
+    return promise1;
+    
+  }
+
+  waiting(2).then(()=>{
+    
+    console.log("Done");
+    
+  })
+  module.exports = waiting;
