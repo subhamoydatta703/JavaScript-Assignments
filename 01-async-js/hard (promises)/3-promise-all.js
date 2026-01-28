@@ -49,9 +49,9 @@ function calculateTime(t1, t2, t3) {
     // console.log("Total time: ", ((t1+t2+t3)/1000), "ms");
 }
 
-calculateTime(2, 3, 5).then((x) => {
-    console.log(`Time: ${x} ms`);
+// calculateTime(2, 3, 5).then((x) => {
+//     console.log(`Time: ${x} ms`);
 
-})
+// })
 
 module.exports = calculateTime;
